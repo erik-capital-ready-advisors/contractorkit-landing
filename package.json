@@ -1,0 +1,9 @@
+{
+  "name": "contractorkit-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ContractorKit founding-member pre-sell validation landing page (static)",
+  "scripts": {
+    "dev": "python3 -m http.server 8080"
+  }
+}
