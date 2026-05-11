@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onboard Any Freelancer in 10 Minutes. One Link. | ContractorKit</title>
+  <meta name="description" content="ContractorKit collects a signed W-9, NDA, IP-assignment agreement, and payment method from any new contractor through one link — no PDF emails, no chasing signatures, no $49-per-contractor bill.">
+  <meta name="keywords" content="freelancer onboarding software, contractor W-9 NDA collection tool, contractor onboarding, IP assignment agreement, agency freelancer paperwork">
+
+  <link rel="canonical" href="https://erik-capital-ready-advisors.github.io/contractorkit-landing/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Onboard Any Freelancer in 10 Minutes. One Link. Zero PDF Emails.">
+  <meta property="og:description" content="A signed W-9, NDA, IP-assignment agreement, and payment method from any new contractor through one link. Flat $49/mo at launch — $29/mo for the first 50 founding members.">
+  <meta property="og:image" content="https://erik-capital-ready-advisors.github.io/contractorkit-landing/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="628">
+  <meta property="og:url" content="https://erik-capital-ready-advisors.github.io/contractorkit-landing/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ContractorKit">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Onboard Any Freelancer in 10 Minutes. One Link. Zero PDF Emails.">
+  <meta name="twitter:description" content="A signed W-9, NDA, IP-assignment agreement, and payment method from any new contractor through one link. Founding rate $29/mo, locked forever — 50 spots.">
+  <meta name="twitter:image" content="https://erik-capital-ready-advisors.github.io/contractorkit-landing/og-image.png">
+
+  <!-- Tailwind CSS (CDN — loaded by the visitor's browser) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1f2933',
+            'primary-700': '#27313c',
+            accent: '#3ebd64',
+            'accent-700': '#34a857',
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📋</text></svg>">
+
+  <!-- Plausible (enabled only if a Plausible site is configured) -->
+  <!-- <script defer data-domain="__PLAUSIBLE_DOMAIN__" src="https://plausible.io/js/script.js"></script> -->
+
+  <style>
+    * { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+    body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+    .btn-cta {
+      background: #3ebd64; color: #ffffff;
+      transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+    }
+    .btn-cta:hover { transform: translateY(-1px); background: #34a857; box-shadow: 0 8px 24px rgba(62,189,100,.30); }
+    .btn-cta:active { transform: translateY(0); }
+    .card-shadow { box-shadow: 0 4px 6px -1px rgba(15,23,32,.08), 0 2px 4px -2px rgba(15,23,32,.08); }
+    details > summary { list-style: none; }
+    details > summary::-webkit-details-marker { display: none; }
+    @keyframes countUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .count-animate { animation: countUp .6s ease forwards; }
+    @keyframes pulseDot { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+    .pulse-dot { animation: pulseDot 1.8s ease-in-out infinite; }
+    html { scroll-padding-top: 84px; }
+  </style>
+</head>
+<body class="bg-white text-primary antialiased">
+
+  <!-- ============ NAV ============ -->
+  <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-[#e5e8eb]">
+    <div class="max-w-5xl mx-auto px-6 py-3.5 flex items-center justify-between">
+      <span class="text-lg font-extrabold tracking-tight text-primary flex items-center gap-2">
+        <span>📋</span> ContractorKit
+      </span>
+      <a href="#pricing" class="btn-cta px-5 py-2.5 rounded-full text-sm font-bold whitespace-nowrap">
+        Reserve a Founding Spot — $29/mo
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="px-6 pt-16 pb-14 md:pt-20 md:pb-16 bg-gradient-to-b from-[#f3f5f7] to-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 bg-white border border-[#e5e8eb] rounded-full px-4 py-2 text-sm text-[#5b6670] mb-7 card-shadow">
+        <span class="w-2 h-2 rounded-full bg-accent pulse-dot"></span>
+        <span id="reserved-line">Founding spots are now open</span>
+      </div>
+
+      <h1 class="text-[34px] leading-[1.1] md:text-[56px] md:leading-[1.05] font-extrabold tracking-tight text-primary mb-6">
+        Onboard Any Freelancer in 10 Minutes.<br class="hidden md:block">
+        One Link. Zero PDF Emails.
+      </h1>
+
+      <p class="text-[17px] md:text-xl text-[#5b6670] leading-relaxed max-w-2xl mx-auto mb-9">
+        ContractorKit collects a signed W-9, NDA, IP-assignment agreement, and payment method from any new contractor
+        through a single link — no emailing PDFs, no chasing signatures, no $49-per-contractor bill — even if you have
+        no compliance coordinator and onboard someone new every week.
+      </p>
+
+      <a href="https://buy.stripe.com/REPLACE_WITH_FOUNDING_LINK" id="hero-cta"
+         class="btn-cta inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-4 rounded-xl text-lg font-bold card-shadow mb-3">
+        Reserve a Founding Spot — $29/mo →
+      </a>
+
+      <p class="text-sm text-[#8a929b] mb-8">
+        <span class="font-semibold text-primary">$29/month</span> founding rate
+        <span class="line-through ml-1">$49/month at launch</span>
+        · first month charged today · only 50 spots
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-[#8a929b]">
+        <span class="flex items-center gap-1.5"><span class="text-accent font-bold">✓</span> No contract — cancel anytime</span>
+        <span class="flex items-center gap-1.5"><span class="text-accent font-bold">✓</span> Full refund if we don't launch in 4 weeks</span>
+        <span class="flex items-center gap-1.5"><span class="text-accent font-bold">✓</span> Founding price locked forever</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 2 — THE PROBLEM ============ -->
+  <section class="px-6 py-16 md:py-20 bg-white">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-[13px] font-semibold text-accent-700 uppercase tracking-[0.14em] text-center mb-3">Sound familiar?</p>
+      <h2 class="text-[28px] md:text-4xl font-bold text-primary text-center leading-tight mb-10">
+        If you hire freelancers every month, you know this loop.
+      </h2>
+
+      <div class="space-y-4">
+        <div class="flex items-start gap-4 p-5 rounded-xl bg-[#f3f5f7] border border-[#e5e8eb]">
+          <span class="text-2xl shrink-0 leading-7">😤</span>
+          <p class="text-[17px] md:text-lg text-primary leading-relaxed">
+            New freelancer starts Monday. By Friday you've sent three emails: the W-9 PDF, the NDA PDF, the
+            IP-assignment PDF — and you're <em>still</em> missing the W-9 because they "didn't see it." Every. Single. Hire.
+          </p>
+        </div>
+
+        <div class="flex items-start gap-4 p-5 rounded-xl bg-[#f3f5f7] border border-[#e5e8eb]">
+          <span class="text-2xl shrink-0 leading-7">📁</span>
+          <p class="text-[17px] md:text-lg text-primary leading-relaxed">
+            Six months later an audit (or a lawsuit, or a client compliance review) asks "show me the signed IP
+            assignment for the designer who built this." You're digging through email threads and a Drive folder
+            named <code class="px-1 py-0.5 rounded bg-white border border-[#e5e8eb] text-[15px]">contractor stuff final FINAL</code>.
+          </p>
+        </div>
+
+        <div class="flex items-start gap-4 p-5 rounded-xl bg-[#f3f5f7] border border-[#e5e8eb]">
+          <span class="text-2xl shrink-0 leading-7">💸</span>
+          <p class="text-[17px] md:text-lg text-primary leading-relaxed">
+            Deel wants $49 per contractor per month. You have 10 active freelancers — that's <strong>$490/mo for
+            paperwork</strong>. Gusto's contractor plan pays them but doesn't <em>onboard</em> them — no NDA, no
+            IP-assignment templates. So you're back to PDFs.
+          </p>
+        </div>
+
+        <div class="flex items-start gap-4 p-5 rounded-xl bg-[#f3f5f7] border border-[#e5e8eb]">
+          <span class="text-2xl shrink-0 leading-7">🕐</span>
+          <p class="text-[17px] md:text-lg text-primary leading-relaxed">
+            Some companies hire a full-time "contractor compliance coordinator" at <strong>$45–65k/year</strong> — a
+            human salary just to do the email-PDF-chase loop. You don't have that budget, so the loop falls on you,
+            every week.
+          </p>
+        </div>
+      </div>
+
+      <p class="text-center text-[#8a929b] mt-9 text-lg italic">"There has to be a better way." — There is.</p>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 3 — THE SOLUTION ============ -->
+  <section class="px-6 py-16 md:py-20 bg-[#f3f5f7]">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-[13px] font-semibold text-accent-700 uppercase tracking-[0.14em] text-center mb-3">Introducing ContractorKit</p>
+      <h2 class="text-[28px] md:text-4xl font-bold text-primary text-center leading-tight mb-4">
+        One link. W-9, NDA, IP assignment, payment method — signed and stored.
+      </h2>
+      <p class="text-[17px] md:text-xl text-[#5b6670] text-center max-w-2xl mx-auto mb-12">
+        US-only, document-first contractor onboarding with a flat unlimited price — built for the hiring company's
+        workflow, not the freelancer's, and not bundled with payroll you don't need.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <!-- Before/After 1 -->
+        <div class="bg-white rounded-2xl p-6 card-shadow border border-[#e5e8eb] flex flex-col">
+          <div class="text-[13px] text-[#dc2626] font-semibold uppercase tracking-wide mb-1">Before</div>
+          <p class="text-[#8a929b] text-sm mb-5 leading-relaxed">Three separate PDF emails per hire and a week of chasing signatures.</p>
+          <div class="text-[13px] text-accent-700 font-semibold uppercase tracking-wide mb-1">After</div>
+          <p class="text-primary font-medium leading-relaxed">
+            One ContractorKit link. The freelancer fills the W-9, e-signs the NDA + IP assignment, and adds a payment
+            method — in under 10 minutes, start to finish.
+          </p>
+        </div>
+
+        <!-- Before/After 2 — AUDIT TRAIL, visually emphasized (ongoing value) -->
+        <div class="bg-primary text-white rounded-2xl p-6 card-shadow border border-primary flex flex-col relative">
+          <span class="absolute -top-3 left-6 bg-accent text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">Ongoing value</span>
+          <div class="text-[13px] text-[#ff9a9a] font-semibold uppercase tracking-wide mb-1 mt-1">Before</div>
+          <p class="text-white/60 text-sm mb-5 leading-relaxed">An audit asks for a signed document and you're spelunking through old email.</p>
+          <div class="text-[13px] text-accent font-semibold uppercase tracking-wide mb-1">After</div>
+          <p class="text-white font-medium leading-relaxed">
+            Every signed document lives in one audit-grade store with a timestamped trail — you export the PDF in two
+            clicks, <strong>in months you don't hire anyone at all.</strong>
+          </p>
+        </div>
+
+        <!-- Before/After 3 -->
+        <div class="bg-white rounded-2xl p-6 card-shadow border border-[#e5e8eb] flex flex-col">
+          <div class="text-[13px] text-[#dc2626] font-semibold uppercase tracking-wide mb-1">Before</div>
+          <p class="text-[#8a929b] text-sm mb-5 leading-relaxed">$490/mo to Deel for 10 contractors, or a $52,000/yr coordinator salary.</p>
+          <div class="text-[13px] text-accent-700 font-semibold uppercase tracking-wide mb-1">After</div>
+          <p class="text-primary font-medium leading-relaxed">
+            $29/mo founding, $49/mo at launch — flat, unlimited contractors, unlimited documents. At 10 freelancers
+            you're paying <strong>~6% of the Deel bill.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 4 — HOW IT WORKS ============ -->
+  <section class="px-6 py-16 md:py-20 bg-white">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-[28px] md:text-4xl font-bold text-primary text-center leading-tight mb-3">Up and running in minutes</h2>
+      <p class="text-[17px] md:text-xl text-[#8a929b] text-center mb-12">No setup headaches. No learning curve. No payroll bundle.</p>
+
+      <div class="space-y-7">
+        <div class="flex items-start gap-5">
+          <div class="w-10 h-10 rounded-full bg-primary text-white font-bold flex items-center justify-center shrink-0 text-lg">1</div>
+          <div>
+            <h3 class="text-xl font-semibold text-primary mb-1">Share one link</h3>
+            <p class="text-[#5b6670] leading-relaxed">Send your ContractorKit onboarding link to any new freelancer — the same link works for everyone, or generate a per-contractor one.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-5">
+          <div class="w-10 h-10 rounded-full bg-primary text-white font-bold flex items-center justify-center shrink-0 text-lg">2</div>
+          <div>
+            <h3 class="text-xl font-semibold text-primary mb-1">They self-complete</h3>
+            <p class="text-[#5b6670] leading-relaxed">Validated W-9 form, e-signature on your NDA + IP-assignment templates, payment-method capture. The status dashboard shows "3 of 4 done" and auto-nudges on what's missing.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-5">
+          <div class="w-10 h-10 rounded-full bg-accent text-white font-bold flex items-center justify-center shrink-0 text-lg ring-4 ring-accent/20">3</div>
+          <div>
+            <h3 class="text-xl font-semibold text-primary mb-1 flex items-center gap-2">It's done — and it <span class="underline decoration-accent decoration-2 underline-offset-2">stays done</span></h3>
+            <p class="text-[#5b6670] leading-relaxed">Every document is stored with an audit trail; export an audit-ready PDF anytime. No filing, no follow-up, no "where's that NDA" — months or years later, it's two clicks.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 p-6 md:p-7 bg-primary rounded-2xl text-center text-white">
+        <p class="text-lg md:text-xl font-semibold leading-relaxed">New-freelancer paperwork stops being a weekly chore — and you can prove every document was signed, years later, in two clicks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 5 — PRICING + THE MATH TABLE (mandatory, prominent) ============ -->
+  <section id="pricing" class="px-6 py-16 md:py-20 bg-[#f3f5f7]">
+    <div class="max-w-3xl mx-auto">
+      <p class="text-[13px] font-semibold text-accent-700 uppercase tracking-[0.14em] text-center mb-3">Founding Member Pricing</p>
+      <h2 class="text-[28px] md:text-4xl font-bold text-primary text-center leading-tight mb-3">Do the math on 10 freelancers</h2>
+      <p class="text-[#5b6670] text-center max-w-xl mx-auto mb-9">No vague "save time." Here's what the same job costs, every month, on every option:</p>
+
+      <!-- THE MATH TABLE -->
+      <div class="bg-white rounded-2xl border border-[#e5e8eb] card-shadow overflow-hidden mb-12">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-sm md:text-[15px]">
+            <thead>
+              <tr class="bg-primary text-white">
+                <th class="px-4 md:px-5 py-3.5 font-semibold">Option</th>
+                <th class="px-4 md:px-5 py-3.5 font-semibold whitespace-nowrap">Cost — 10 active freelancers</th>
+                <th class="px-4 md:px-5 py-3.5 font-semibold">What you actually get</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-[#e5e8eb]">
+              <tr>
+                <td class="px-4 md:px-5 py-3.5 font-medium text-primary whitespace-nowrap">Deel</td>
+                <td class="px-4 md:px-5 py-3.5 text-[#dc2626] font-semibold whitespace-nowrap">~$490/mo <span class="text-[#8a929b] font-normal">($49/contractor)</span></td>
+                <td class="px-4 md:px-5 py-3.5 text-[#5b6670]">International-compliance platform; overkill for US-only</td>
+              </tr>
+              <tr>
+                <td class="px-4 md:px-5 py-3.5 font-medium text-primary whitespace-nowrap">Gusto Contractor Plan</td>
+                <td class="px-4 md:px-5 py-3.5 text-primary font-semibold whitespace-nowrap">~$95/mo <span class="text-[#8a929b] font-normal">($35 + $6×10)</span></td>
+                <td class="px-4 md:px-5 py-3.5 text-[#5b6670]">Pays contractors; no NDA/IP templates, doesn't onboard them</td>
+              </tr>
+              <tr>
+                <td class="px-4 md:px-5 py-3.5 font-medium text-primary whitespace-nowrap">Compliance coordinator (FTE)</td>
+                <td class="px-4 md:px-5 py-3.5 text-[#dc2626] font-semibold whitespace-nowrap">~$4,300/mo <span class="text-[#8a929b] font-normal">($52k/yr)</span></td>
+                <td class="px-4 md:px-5 py-3.5 text-[#5b6670]">A human doing the email-PDF-chase loop</td>
+              </tr>
+              <tr>
+                <td class="px-4 md:px-5 py-3.5 font-medium text-primary whitespace-nowrap">DIY (Forms + Dropbox Sign + Drive)</td>
+                <td class="px-4 md:px-5 py-3.5 text-primary font-semibold whitespace-nowrap">~$15–25/mo <span class="text-[#8a929b] font-normal">+ your hours</span></td>
+                <td class="px-4 md:px-5 py-3.5 text-[#5b6670]">Breaks past 3 hires/mo; no audit trail; no reminders</td>
+              </tr>
+              <tr class="bg-primary text-white">
+                <td class="px-4 md:px-5 py-4 font-bold whitespace-nowrap">ContractorKit</td>
+                <td class="px-4 md:px-5 py-4 whitespace-nowrap"><span class="text-accent font-extrabold text-base">$49/mo flat</span> <span class="text-white/70 font-normal">(founding $29/mo)</span></td>
+                <td class="px-4 md:px-5 py-4 text-white/90">W-9 + NDA + IP-assign + payment capture + audit-trail store, unlimited contractors</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- FOUNDING MEMBER CARD -->
+      <div class="max-w-xl mx-auto bg-white rounded-3xl border-2 border-accent card-shadow overflow-hidden">
+        <div class="bg-accent text-white text-center py-3 text-sm font-bold tracking-wide">
+          ⚡ FOUNDING MEMBER RATE — <span id="spots-remaining">50</span> OF 50 SPOTS LEFT
+        </div>
+        <div class="p-7 md:p-8">
+          <div class="flex items-baseline gap-2 mb-1">
+            <span class="text-5xl font-extrabold text-primary">$29</span>
+            <span class="text-[#8a929b] text-lg">/month flat</span>
+          </div>
+          <p class="text-[#8a929b] text-sm mb-6">
+            At public launch: <span class="line-through">$49/month</span> · founding price <strong class="text-primary">locked forever</strong> · unlimited contractors, unlimited documents
+          </p>
+
+          <ul class="space-y-3 mb-7">
+            <li class="flex items-start gap-3 text-primary"><span class="text-accent font-bold mt-0.5">✓</span><span>One shareable onboarding link — validated W-9, e-signed NDA + IP assignment, payment-method capture</span></li>
+            <li class="flex items-start gap-3 text-primary"><span class="text-accent font-bold mt-0.5">✓</span><span>Status dashboard ("3 of 4 done") with automatic reminder emails</span></li>
+            <li class="flex items-start gap-3 text-primary"><span class="text-accent font-bold mt-0.5">✓</span><span>Audit-grade document store + timestamped trail — export an audit-ready PDF anytime <span class="text-[#8a929b]">(a paid add-on at launch — free for founders)</span></span></li>
+            <li class="flex items-start gap-3 text-primary"><span class="text-accent font-bold mt-0.5">✓</span><span>We migrate your existing NDA / IP-assignment templates in for you</span></li>
+            <li class="flex items-start gap-3 text-primary"><span class="text-accent font-bold mt-0.5">✓</span><span>Direct line to the founder for 90 days</span></li>
+          </ul>
+
+          <a href="https://buy.stripe.com/REPLACE_WITH_FOUNDING_LINK" id="pricing-cta"
+             class="btn-cta w-full block text-center px-8 py-4 rounded-xl text-lg font-bold mb-3">
+            Reserve a Founding Spot — $29/mo →
+          </a>
+          <p class="text-center text-[#8a929b] text-sm">
+            🔒 First month ($29) charged today · full refund if we don't launch within 4 weeks · cancel anytime
+          </p>
+
+          <!-- Secondary: notify-me email capture -->
+          <div class="mt-7 pt-6 border-t border-[#e5e8eb]">
+            <p class="text-sm text-[#5b6670] mb-3 text-center">Not ready to reserve? Get a heads-up when we launch:</p>
+            <form id="notify-form" class="flex flex-col sm:flex-row gap-2">
+              <input type="email" name="email" required placeholder="you@youragency.com"
+                     class="flex-1 px-4 py-3 rounded-xl border border-[#e5e8eb] text-primary placeholder:text-[#8a929b] focus:ring-2 focus:ring-accent outline-none">
+              <button type="submit" class="px-5 py-3 rounded-xl border border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-colors whitespace-nowrap">
+                Notify me at launch
+              </button>
+            </form>
+            <p id="notify-msg" class="text-sm mt-2 text-center hidden"></p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-[#8a929b] mt-6 text-sm">
+        <span id="spots-remaining-2" class="font-semibold text-accent-700">50</span> founding spots remaining · price never goes up for founders
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 6 — FAQ ============ -->
+  <section class="px-6 py-16 md:py-20 bg-white">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-[28px] md:text-4xl font-bold text-primary text-center mb-10">Common questions</h2>
+      <div class="space-y-3" id="faq">
+
+        <details class="group border border-[#e5e8eb] rounded-xl overflow-hidden">
+          <summary class="flex items-center justify-between gap-4 px-5 md:px-6 py-4 cursor-pointer font-semibold text-primary hover:bg-[#f3f5f7]">
+            What if you don't build it?
+            <span class="text-[#8a929b] group-open:rotate-180 transition-transform duration-200 shrink-0">▼</span>
+          </summary>
+          <div class="px-5 md:px-6 pb-5 pt-4 text-[#5b6670] leading-relaxed border-t border-[#e5e8eb]">
+            Full refund, no questions. We charge the founding $29 now to prove real demand from real agency owners — not a vendor-manufactured narrative. If we don't ship within 4 weeks of this window closing, every founding member is refunded in full.
+          </div>
+        </details>
+
+        <details class="group border border-[#e5e8eb] rounded-xl overflow-hidden">
+          <summary class="flex items-center justify-between gap-4 px-5 md:px-6 py-4 cursor-pointer font-semibold text-primary hover:bg-[#f3f5f7]">
+            When does it actually launch?
+            <span class="text-[#8a929b] group-open:rotate-180 transition-transform duration-200 shrink-0">▼</span>
+          </summary>
+          <div class="px-5 md:px-6 pb-5 pt-4 text-[#5b6670] leading-relaxed border-t border-[#e5e8eb]">
+            ~3 weeks from the close of this window (target early June 2026). v1 scope: one onboarding link, validated W-9 form, e-signature (Dropbox Sign) for NDA + IP assignment, payment-method capture, status dashboard + reminder emails. No payroll, no international EOR, no AI-generated agreements.
+          </div>
+        </details>
+
+        <details class="group border border-[#e5e8eb] rounded-xl overflow-hidden">
+          <summary class="flex items-center justify-between gap-4 px-5 md:px-6 py-4 cursor-pointer font-semibold text-primary hover:bg-[#f3f5f7]">
+            We're already on Gusto. Why add this?
+            <span class="text-[#8a929b] group-open:rotate-180 transition-transform duration-200 shrink-0">▼</span>
+          </summary>
+          <div class="px-5 md:px-6 pb-5 pt-4 text-[#5b6670] leading-relaxed border-t border-[#e5e8eb]">
+            Gusto pays contractors; it doesn't onboard them. ContractorKit gives you what Gusto doesn't: NDA + IP-assignment templates, document-first flow with no payroll bundle, audit-grade store of every signed document. Use them side by side.
+          </div>
+        </details>
+
+        <details class="group border border-[#e5e8eb] rounded-xl overflow-hidden">
+          <summary class="flex items-center justify-between gap-4 px-5 md:px-6 py-4 cursor-pointer font-semibold text-primary hover:bg-[#f3f5f7]">
+            Is our contractor data secure?
+            <span class="text-[#8a929b] group-open:rotate-180 transition-transform duration-200 shrink-0">▼</span>
+          </summary>
+          <div class="px-5 md:px-6 pb-5 pt-4 text-[#5b6670] leading-relaxed border-t border-[#e5e8eb]">
+            Every document stored encrypted with a timestamped audit trail (who signed what, when), exportable as an audit-ready PDF. No fund movement through ContractorKit (payment-method metadata only) — money stays in your existing payroll/payment system.
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 7 — FINAL CTA ============ -->
+  <section class="px-6 py-16 md:py-20 bg-gradient-to-b from-white to-[#f3f5f7]">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-[28px] md:text-4xl font-bold text-primary leading-tight mb-6">
+        Next week looks like every other week — unless you change it.
+      </h2>
+      <p class="text-[17px] md:text-xl text-[#5b6670] leading-relaxed mb-8">
+        Keep doing it the old way and next week looks like every other week: a new freelancer, three PDF emails, a
+        missing W-9, a chased signature, a document that lands in a Drive folder no one will find when it matters.
+        Multiply by every hire, every month — you're eating that time yourself, paying $490 to Deel, or paying $52k
+        for a coordinator to eat it. ContractorKit makes it one link and ten minutes — W-9, NDA, IP assignment,
+        payment method, signed and stored with an audit trail you can pull up years later. Flat $49/mo at launch,
+        unlimited contractors. <strong class="text-primary">$29/mo for the first 50, locked forever, fully
+        refundable.</strong> Reserve your founding spot now.
+      </p>
+
+      <a href="https://buy.stripe.com/REPLACE_WITH_FOUNDING_LINK" id="final-cta"
+         class="btn-cta inline-flex items-center justify-center gap-2 w-full sm:w-auto px-10 py-5 rounded-xl text-xl font-bold card-shadow">
+        Reserve a Founding Spot — $29/mo →
+      </a>
+      <p class="text-[#8a929b] text-sm mt-4">Full refund if the product doesn't launch within 4 weeks. No questions asked.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="px-6 py-8 border-t border-[#e5e8eb]">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-[#8a929b]">
+      <span class="flex items-center gap-2"><span>📋</span> © 2026 ContractorKit. All rights reserved.</span>
+      <span>US-only contractor onboarding — W-9 · NDA · IP assignment · payment capture</span>
+    </div>
+  </footer>
+
+  <!-- ============ JS — Supabase live counter, analytics, notify-form. ANON KEY ONLY. ============ -->
+  <script>
+    (function () {
+      var SUPABASE_URL = "https://otiwvsflpcambhoqkqfw.supabase.co";
+      var SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im90aXd2c2ZscGNhbWJob3FrcWZ3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY1ODgxMzgsImV4cCI6MjA5MjE2NDEzOH0.r0GMbUorRKBd6Tn9M8uDCPZLqj_AP1J4-YvaITTas-8"; // safe to expose — anon key, RLS-protected
+      var PRODUCT = "contractorkit";
+      var FOUNDING_TOTAL = 50;
+      var headers = { "apikey": SUPABASE_ANON_KEY, "Authorization": "Bearer " + SUPABASE_ANON_KEY, "Content-Type": "application/json" };
+
+      function setText(id, txt) { var el = document.getElementById(id); if (el) { el.textContent = txt; el.classList.add("count-animate"); } }
+
+      // 1) Founding-spots counter from the `config` row
+      fetch(SUPABASE_URL + "/rest/v1/config?select=value&key=eq." + PRODUCT + "_founding_spots_remaining", { headers: headers })
+        .then(function (r) { return r.ok ? r.json() : []; })
+        .then(function (rows) {
+          var remaining = (rows && rows[0] && parseInt(rows[0].value, 10));
+          if (isNaN(remaining)) return;
+          remaining = Math.max(0, Math.min(FOUNDING_TOTAL, remaining));
+          setText("spots-remaining", remaining);
+          setText("spots-remaining-2", remaining);
+          var reserved = FOUNDING_TOTAL - remaining;
+          var el = document.getElementById("reserved-line");
+          if (el) {
+            el.textContent = reserved > 0
+              ? (reserved === 1 ? "1 agency has reserved a founding spot" : reserved + " agencies have reserved a founding spot")
+              : "Founding spots are now open";
+            el.classList.add("count-animate");
+          }
+        })
+        .catch(function () { /* counter is an enhancement; never break the page */ });
+
+      // 2) Page-view telemetry → `contractorkit_analytics` (must be readable by the Validator)
+      fetch(SUPABASE_URL + "/rest/v1/" + PRODUCT + "_analytics", {
+        method: "POST",
+        headers: Object.assign({}, headers, { "Prefer": "return=minimal" }),
+        body: JSON.stringify({
+          product: PRODUCT,
+          event: "page_view",
+          path: location.pathname,
+          referrer: document.referrer || null,
+          ua: (navigator.userAgent || "").slice(0, 250),
+          created_at: new Date().toISOString()
+        })
+      }).catch(function () {});
+
+      // 3) Secondary email capture → `contractorkit_signups`
+      var form = document.getElementById("notify-form");
+      if (form) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var msg = document.getElementById("notify-msg");
+          var btn = form.querySelector("button[type=submit]");
+          var email = (form.querySelector("input[type=email]").value || "").trim();
+          if (!email) return;
+          btn.disabled = true; btn.textContent = "Adding…";
+          fetch(SUPABASE_URL + "/rest/v1/" + PRODUCT + "_signups", {
+            method: "POST",
+            headers: Object.assign({}, headers, { "Prefer": "return=minimal" }),
+            body: JSON.stringify({ email: email, product: PRODUCT, source: "landing_notify", created_at: new Date().toISOString() })
+          }).then(function (r) {
+            if (!r.ok && r.status !== 409) throw new Error("insert failed " + r.status);
+            form.innerHTML = '<p class="text-accent-700 font-semibold text-center py-2 w-full">✓ You\'re on the list — we\'ll email you the moment we launch.</p>';
+          }).catch(function () {
+            btn.disabled = false; btn.textContent = "Notify me at launch";
+            if (msg) { msg.textContent = "Hmm — that didn't go through. Try again in a moment."; msg.className = "text-sm mt-2 text-center text-[#dc2626]"; }
+          });
+        });
+      }
+
+      // 4) CTA click telemetry (Plausible if present; otherwise log to analytics table)
+      function trackCta(id) {
+        if (typeof window.plausible === "function") { window.plausible("CTA Click", { props: { location: id } }); return; }
+        fetch(SUPABASE_URL + "/rest/v1/" + PRODUCT + "_analytics", {
+          method: "POST",
+          headers: Object.assign({}, headers, { "Prefer": "return=minimal" }),
+          body: JSON.stringify({ product: PRODUCT, event: "cta_click", path: id, referrer: document.referrer || null, created_at: new Date().toISOString() })
+        }).catch(function () {});
+      }
+      ["hero-cta", "pricing-cta", "final-cta"].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) el.addEventListener("click", function () { trackCta(id); });
+      });
+    })();
+  </script>
+</body>
+</html>
